@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">Logo</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="prestations.html">Prestations</a></li>
+                    <li><a href="cours.html">Cours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="contact-form">
+                <h1>Contactez-nous</h1>
+                <form action="send_email.php" method="post">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+            <section class="contact-info">
+                <h2>Nos Coordonnées</h2>
+                <p>Adresse : 123 Rue de la Cuisine, 75000 Paris</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+                <p>Email : contact@cuisine-service.fr</p>
+                <div id="map">
+                    <!-- Google Maps Integration -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 [Nom du Service]. Tous droits réservés.</p>
+        </footer>
+    </div>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

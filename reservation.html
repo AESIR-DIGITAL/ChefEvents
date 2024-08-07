@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="style/reservation.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">Logo</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="prestations.html">Prestations</a></li>
+                    <li><a href="cours.html">Cours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <div class="hamburger"></div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="reservation-form">
+                <h1>Réservez votre prestation</h1>
+                <form action="reserve.php" method="post">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="date">Date :</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="service">Service :</label>
+                    <select id="service" name="service" required>
+                        <option value="mariage">Service de Mariage</option>
+                        <option value="diner">Service de Dîner</option>
+                        <option value="cours">Cours de Cuisine</option>
+                    </select>
+                    <button type="submit">Réserver</button>
+                </form>
+            </section>
+            <section class="info">
+                <h2>Informations supplémentaires</h2>
+                <p>Conditions et modalités de réservation.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 [Nom du Service]. Tous droits réservés.</p>
+        </footer>
+    </div>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>
