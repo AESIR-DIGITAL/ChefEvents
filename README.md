@@ -24,4 +24,4 @@ _____________________________
 
 | #    | Name              |                                          Demo                                          |
 |:-----|-------------------|:--------------------------------------------------------------------------------------:|
-| #1   | ChefEvents     |                [Demo](https://aesir-digital.github.io/Restaurant-html/)             |
+| #1   | ChefEvents     |                [Demo](https://aesir-digital.github.io/ChefEvents/)             |
